@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Home
+---
+
+<h1>Products</h1>
+
+{% set postslist = collections.myProduct %}
+{% include "postslist.njk" %}
+

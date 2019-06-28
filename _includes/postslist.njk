@@ -1,0 +1,8 @@
+<ol reversed class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
+{% for product in postslist | reverse %}
+  {% set currentPost = product.data.product %}
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <a href="{{ product.url | url }}" class="postlist-link">{% if currentPost.name %}{{ currentPost.name }}{% else %}<code>{{ product.url }}</code>{% endif %}</a>
+  </li>
+{% endfor %}
+</ol>

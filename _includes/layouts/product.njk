@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-product
+---
+<h1>{{ product.name }}</h1>
+<div>
+  <img src={{ product.image }} />
+</div>
+<ul>
+  <li>abv: {{ product.abv }}</li>
+  <li>ageLimit: {{ product.ageLimit }}</li>
+  <li>aroma: {{ product.aroma }}</li>
+  <li>barcode: {{ product.barcode }}</li>
+  <li>bioDynamic: {{ product.bioDynamic }}</li>
+  <li>color: {{ product.color }}</li>
+  <li>containerSize: {{ product.containerSize }}</li>
+  <li>containerType: {{ product.containerType }}</li>
+  <li>cork: {{ product.cork }}</li>
+  <li>deliveryTime: {{ product.deliveryTime }}</li>
+<li>description: {{ product.description }}</li>
+</ul>
+
+<p><a href="{{ '/' | url }}">← Home</a></p>
